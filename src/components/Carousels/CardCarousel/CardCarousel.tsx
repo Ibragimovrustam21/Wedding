@@ -1,4 +1,4 @@
-import React, { EventHandler, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { message } from 'antd';
 import axios from 'axios';
@@ -69,14 +69,14 @@ export const CardCarousel = () => {
           >
             {
               data && data.map((item, index) => {
-                const { id, name, active, image } = item
+                const { id, name, image } = item
                 return (
                   <SwiperSlide key={id}>
                     <div className='carousel__service'>
                       <input
                         id={id}
                         type="checkbox"
-                        checked={checkedCard == index}
+                        checked={checkedCard === index}
                         className='input__checkbox'
                         onChange={(e) => onChange(e, id)}
                       />

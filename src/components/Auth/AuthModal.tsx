@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Modal, Input, DatePicker, Select, message } from 'antd'
 import modal_img from '../../Assets/images/modalmg.png'
 import './authModal.scss'
-import axios, { AxiosRequestHeaders } from 'axios'
+import axios from 'axios'
 import InputMask from 'react-input-mask';
 import type { DatePickerProps } from 'antd';
 
@@ -95,12 +95,12 @@ export const AuthModal = ({ isModalVisible, setIsModalVisible }: IModal) => {
                 />
               </div>
               <div className="modal__input">
-                  <DatePicker
-                    placeholder='Дата'
-                    size='large'
-                    onChange={onChange}
-                    // format="DD-MM-YYYY"
-                  />
+                <DatePicker
+                  placeholder='Дата'
+                  size='large'
+                  onChange={onChange}
+                // format="DD-MM-YYYY"
+                />
               </div>
               <div className="modal__input">
                 <Select

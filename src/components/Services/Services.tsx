@@ -51,12 +51,14 @@ export const Services = () => {
 
 
   const clickCard = async (id: number) => {
-    selectedCard.length == 0 && setSelectedCard([id])
+    selectedCard.length === 0 && setSelectedCard([id])
     selectedCard.map(i => {
-      if (i !== id) setSelectedCard([...selectedCard, id])
+      if (i !== id) {
+        return setSelectedCard([...selectedCard, id])
+      }
       else {
         let filter = selectedCard.filter(a => a !== id)
-        setSelectedCard([...filter])
+        return setSelectedCard([...filter])
       }
     })
   }
@@ -87,10 +89,10 @@ export const Services = () => {
           <div className='services__cards'>
             {
               data && data.map((item, key) => {
-                const { id: btnId, name, type, image, description, price } = item
+                const { id: btnId, name, image, description, price } = item
 
                 return (
-                  <div {...animateUp} className='services__card--item' onClick={() => clickCard(btnId)} key={btnId} >
+                  <div {...animateUp} className='services__card--item' onClick={() => clickCard(btnId)} key={key} >
                     <div className='card__img'>
                       <img src={image} alt="" />
                     </div>
