@@ -1,0 +1,84 @@
+.sticky {
+  height: 70px;
+  width: 100%;
+  z-index: 111;
+  background-color: #fff;
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px !important;
+  animation-name: sticky_active;
+  animation-duration: 0.8s;
+  transition: all 0.4s linear;
+}
+
+@keyframes sticky_active {
+  0% {
+    opacity: 0;
+    top: -70px;
+    padding: 20px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s linear;
+
+  .navbar__logo {
+    img {}
+  }
+
+  .navbar__menu {
+    ul {
+      display: flex;
+      margin: 0;
+
+      li {
+        padding: 10px;
+        margin-right: 20px;
+
+        a {
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 27px;
+          color: #313131;
+        }
+      }
+    }
+  }
+
+  .navbar__btn {}
+}
+
+@media (min-width:0) and (max-width:446.9px) {
+  .navbar {
+    height: 80px;
+
+    .navbar__logo {
+      img {
+        width: 80px;
+      }
+    }
+
+    .navbar__menu {
+      display: none;
+    }
+
+    .navbar__btn {
+      display: none;
+    }
+  }
+
+}
+

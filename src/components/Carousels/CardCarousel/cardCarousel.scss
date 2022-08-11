@@ -1,0 +1,185 @@
+.card__carousel {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project__title {
+    font-weight: 400;
+    font-size: 25px;
+    color: #313131;
+    margin: 25px 0;
+  }
+
+  .carousel__service {
+    position: relative;
+    transition: all 0.2s linear;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.07);
+      transition: all 0.2s linear;
+    }
+
+    input {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      z-index: 99;
+      height: 25px;
+      width: 25px;
+    }
+
+    label {
+      cursor: pointer;
+    }
+
+    .carousel__service--item {
+      height: 450px;
+      width: 450px;
+
+      &:hover .carousel__service--info {
+        transform: translateY(-10px);
+        transition: all 0.2s linear;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      .carousel__service--info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        width: 100%;
+        transform: translateY(60px);
+        transition: all 0.2s linear;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(15px);
+        z-index: 20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+          margin: 0;
+          color: #fff;
+
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:0) and (max-width:446.9px) {
+  .card__carousel {
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100% !important;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project__title {
+      font-weight: 400;
+      font-size: 22px;
+      color: #313131;
+      margin: 25px 0;
+    }
+
+    .carousel__service {
+      position: relative;
+      transition: all 0.2s linear;
+      border-radius: 10px;
+      overflow: hidden;
+
+      &:hover {
+        transform: scale(1.07);
+        transition: all 0.2s linear;
+      }
+
+      input {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        z-index: 99;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+      }
+
+      label {
+        cursor: pointer;
+      }
+
+      .carousel__service--item {
+        height: 400px;
+        width: 100%;
+
+        &:hover .carousel__service--info {
+          transform: translateY(-10px);
+          transition: all 0.2s linear;
+        }
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+
+        .carousel__service--info {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 60px;
+          width: 100%;
+          transform: translateY(60px);
+          transition: all 0.2s linear;
+          background: rgba(255, 255, 255, 0.15);
+          backdrop-filter: blur(15px);
+          z-index: 20;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          h3 {
+            margin: 0;
+            color: #fff;
+
+          }
+        }
+      }
+    }
+  }
+}

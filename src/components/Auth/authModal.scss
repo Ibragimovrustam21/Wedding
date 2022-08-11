@@ -1,0 +1,110 @@
+  .auth__modal {
+    .ant-modal-close {
+      left: 0 !important;
+    }
+
+    .ant-modal-body {
+      height: 550px;
+    }
+
+    .ant-picker-dropdown {
+      top: 345px !important;
+    }
+
+    .ant-picker-focused {
+      outline: none !important;
+      box-shadow: none !important;
+      border-bottom: 1px solid #818181 !important;
+    }
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      color: #bfbfbf !important;
+    }
+
+    .ant-picker,
+    .ant-select-selector {
+      width: 100%;
+      border: none !important;
+      border-bottom: 1px solid #818181 !important;
+
+      &:focus {
+        color: #0A0A0A !important;
+        outline: none !important;
+        box-shadow: none !important;
+        border-bottom: 1px solid #818181 !important;
+      }
+    }
+
+  }
+
+
+
+
+  .modal__block {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .modal__form {
+      padding: 20px;
+      width: 45%;
+
+      .modal__form--title {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #0A0A0A;
+        margin-bottom: 40px;
+      }
+
+      .modal__input {
+        margin-bottom: 5px;
+        width: 100%;
+
+        .modal__input--text {
+          border: none;
+          border-bottom: 1px solid #818181;
+
+          &:focus {
+            outline: none !important;
+            box-shadow: none;
+            border-bottom: 1px solid #818181 !important;
+          }
+        }
+
+        .modal__input--phone {
+          border: none;
+          border-bottom: 1px solid #818181;
+          color: #bfbfbf;
+          padding: 6.5px 11px;
+          width: 100%;
+
+          &:focus {
+            outline: none !important;
+            box-shadow: none;
+            border-bottom: 1px solid #818181 !important;
+            color: #0A0A0A;
+          }
+        }
+      }
+
+      .btn {
+        margin-top: 60px;
+        width: 100%;
+      }
+    }
+
+    .modal__img {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 50%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }

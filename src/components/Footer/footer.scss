@@ -1,0 +1,128 @@
+.footer {
+  background: #F2F2F2;
+
+  .footer__block {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+
+    .footer__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 30%;
+
+      .messenger {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+
+        .messenger--box {
+          margin-right: 15px;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            border: 2px solid #5785A9;
+          }
+        }
+      }
+
+      .footer__contact {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: 10px;
+        }
+
+        .footer__contact--phone {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+          color: #313131;
+          margin: 0;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .footer__right {
+      width: 70%;
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        margin: 0;
+
+        li {
+          padding: 10px;
+          margin-right: 20px;
+
+          a {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 27px;
+            color: #313131;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width:0) and (max-width:446.9px) {
+  .footer {
+    .footer__block {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+
+      .footer__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .messenger {
+          display: flex;
+          align-items: center;
+          margin: 40px 0;
+
+          .messenger--box {
+            margin-right: 15px;
+
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 45px;
+              width: 45px;
+              border-radius: 50%;
+              border: 2px solid #5785A9;
+            }
+          }
+        }
+
+        .footer__contact {
+          display: none;
+        }
+      }
+
+      .footer__right {
+        display: none;
+      }
+    }
+
+  }
+
+}
