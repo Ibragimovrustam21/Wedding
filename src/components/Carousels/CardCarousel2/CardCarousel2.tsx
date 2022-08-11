@@ -73,12 +73,12 @@ export const CardCarousel2 = () => {
         >
           {
             data && data.map((item, index) => {
-              const { id, name, active, image } = item
+              const { id, name,  image } = item
 
               return (
                 <SwiperSlide key={id}>
                   <div className='carousel__service'>
-                    <input type="checkbox" checked={checkedCard == index} id={id + '1'} onChange={onChange} />
+                    <input type="checkbox" checked={checkedCard === index} id={id + '1'} onChange={onChange} />
                     <label htmlFor={id + '1'} className='carousel__service--label' onClick={() => checked(index)}>
                       <div className='carousel__service--item'>
                         <img src={image} alt="" />
